@@ -1,0 +1,23 @@
+i. Explain your algorithm in a step-by-step format. 
+- During initialization, find the largest key size and put everything into Stack1. Save the key as maxKey.
+- Then take each item out of stack1 and compare it's key to the maxKey. 
+  - If it's equal to the maxKey, put it into stack2.
+  - If it's not equal, put it into the queue.
+- Take the items out of the queue and note the new largest key into maxKey once more. 
+- Repeat until stack1 and queue are both empty.
+
+ii. What role did the queue play in your algorithm? Could you have fulfilled all the 
+requirements of this assignment with three stacks? Explain your answer. 
+- The queue served as a waiting line for bringing things back into the stacks as well as finding the new largest key. It could be possible to replace the queue with another key and the only affect would be that of the numbers are kept in the same order while being put back into stack1.
+
+iii. Is this experimental sorting algorithm stable? Explain your answer. 
+- No it is not. As thing are put into the output array, the timestamp is not consistent with a pattern.
+
+iv. Does this experimental sorting algorithm sort in place? Explain your answer. 
+- No. It uses extra space to organize and sort. That is not a sort in place algorithm.
+
+v. What is the running time of this algorithm in big O notation? 
+O(N)
+
+vi. Share your thoughts on the challenge of making this algorithm a stable algorithm 
+- A possible way to make this a stable algorithm would be to add another stack or queue that checks the timestamp and if there are duplicates. Doing this would be a bit complex on it's own and may cause a bit of issues with how the structure is currently laid out. 

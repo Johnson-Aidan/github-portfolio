@@ -1,0 +1,5 @@
+﻿  HW2.cpp
+C:\Users\mrrob\Desktop\Comp Sci HW\Fund 2 HW\HW2\HW\HW2.cpp(131,22): warning C4018: '>': signed/unsigned mismatch
+C:\Users\mrrob\Desktop\Comp Sci HW\Fund 2 HW\HW2\HW\HW2.cpp(157,16): warning C4244: 'initializing': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\mrrob\Desktop\Comp Sci HW\Fund 2 HW\HW2\HW\HW2.cpp(312,20): warning C4018: '<': signed/unsigned mismatch
+  HW.vcxproj -> C:\Users\mrrob\Desktop\Comp Sci HW\Fund 2 HW\HW2\HW\Debug\HW.exe

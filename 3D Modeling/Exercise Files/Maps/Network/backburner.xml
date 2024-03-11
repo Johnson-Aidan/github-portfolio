@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE SystemConfiguration [
+	<!ELEMENT SystemConfiguration (GeneralCfg*, TimerCfg*, LogCfg*, AppDetails*)>
+	<!ELEMENT GeneralCfg (ManagerPort, MaxBlockSize, NetworkMask)>
+	<!ELEMENT ManagerPort (#PCDATA)>
+	<!ELEMENT MaxBlockSize (#PCDATA)>
+	<!ELEMENT NetworkMask (#PCDATA)>
+	<!ELEMENT TimerCfg (AckTimeout, AckRetries, FastTimeout)>
+	<!ELEMENT AckTimeout (#PCDATA)>
+	<!ELEMENT AckRetries (#PCDATA)>
+	<!ELEMENT FastTimeout (#PCDATA)>
+	<!ELEMENT LogCfg (LogError, LogWarning, LogInfo, LogDebug, LogDebugex)>
+	<!ELEMENT LogError (#PCDATA)>
+	<!ELEMENT LogWarning (#PCDATA)>
+	<!ELEMENT LogInfo (#PCDATA)>
+	<!ELEMENT LogDebug (#PCDATA)>
+	<!ELEMENT LogDebugex (#PCDATA)>
+	<!ELEMENT AppDetails ANY>
+	]>
+<SystemConfiguration>
+	<GeneralCfg>
+		<ManagerPort>3234</ManagerPort>
+		<ServerPort>3233</ServerPort>
+		<MaxBlockSize>128000</MaxBlockSize>
+		<NetworkMask>255.255.255.0</NetworkMask>
+		<HttpRedirection>http://www.discreet.com</HttpRedirection>
+	</GeneralCfg>
+	<TimerCfg>
+		<AckTimeout>20000</AckTimeout>
+		<AckRetries>6</AckRetries>
+		<FastTimeout>4000</FastTimeout>
+	</TimerCfg>
+	<LogCfg>
+		<LogError>1</LogError>
+		<LogWarning>1</LogWarning>
+		<LogInfo>1</LogInfo>
+		<LogDebug>0</LogDebug>
+		<LogDebugex>0</LogDebugex>
+		<LogMaxFileSize>10485760</LogMaxFileSize>
+	</LogCfg>
+	<AppDetails>
+		<MaxClient_x86>
+			<ManagerName></ManagerName>
+			<AutoConnect>1</AutoConnect>
+			<IncludeMaps>0</IncludeMaps>
+			<IgnoreScene>0</IgnoreScene>
+			<UseAllServers>1</UseAllServers>
+			<ServerTabs>1</ServerTabs>
+			<UseVfb>1</UseVfb>
+			<Notifications>0</Notifications>
+			<NotifyFailure>1</NotifyFailure>
+			<NotifyProgress>0</NotifyProgress>
+			<NotifyCompletion>1</NotifyCompletion>
+			<SendEmails>0</SendEmails>
+			<IncludeSummary>0</IncludeSummary>
+			<EmailFrom></EmailFrom>
+			<EmailTo></EmailTo>
+			<EmailServer></EmailServer>
+			<ManagerPort>3234</ManagerPort>
+			<UseTimeouts>No</UseTimeouts>
+			<MaxLoad>20</MaxLoad>
+			<MaxUnload>10</MaxUnload>
+			<MaxRender>600</MaxRender>
+			<StripCount>10</StripCount>
+			<StripOverlap>0</StripOverlap>
+			<DeleteTempImage>Yes</DeleteTempImage>
+			<Pixels>Yes</Pixels>
+			<JobHandling>1</JobHandling>
+			<OverrideGlobal>No</OverrideGlobal>
+			<UseAltMapPath>No</UseAltMapPath>
+			<UseAltXrefPath>No</UseAltXrefPath>
+			<BlockTasks>Yes</BlockTasks>
+			<EnableServerLimit>No</EnableServerLimit>
+			<ServerLimitCount>1</ServerLimitCount>
+			<ArchiveDays>4</ArchiveDays>
+			<DeleteDays>7</DeleteDays>
+			<JobPlatform>0</JobPlatform>
+		</MaxClient_x86>
+	</AppDetails>
+</SystemConfiguration>

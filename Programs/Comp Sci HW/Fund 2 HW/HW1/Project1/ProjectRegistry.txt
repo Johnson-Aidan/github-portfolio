@@ -1,0 +1,10 @@
+Carter		1 2 4
+Nelson		2 3 4 5
+Shaw		1 4
+Williams	3 4
+Adkins		1 2
+Phillips 	4
+Garcia		1 2 3 4 5
+Wang		5
+Anderson	1 5
+Smith		2 3

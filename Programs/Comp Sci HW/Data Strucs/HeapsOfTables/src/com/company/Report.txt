@@ -1,0 +1,19 @@
+Q1. Discuss the advantages and disadvantages of using BST vs. using a linked list. Present
+your argument with respect to running time in big O notation, memory efficiency, etc.
+- Depending on how the program is set up, you can still have a big O notation of O(1) with the linked list however with BST's, it will be O(n) all the time due to that being the time constraint for BSTs. This is because BSTs only have O(n) for their notation. When it comes to memeory costs, it once again comes down to implementation. If you set up a BST properly in a hash table, you can allow for only the right children to be used after the node. It would essentially be another form of a Linked List. If set up so order doesn't matter, then you may have a case where you have left children too. This would cause the issue of having to use more memory since the root would have two pointers, one for each child. Linked Lists can't have this issue due to not having "children" but whatever is next in the list.
+
+
+Q2. Discuss your strategy in dealing with duplicates. As was mentioned above, it must be one
+of the two ideas outlined. Explain your reasoning, and specify the running time, memory cost and
+any other relevant factor in your decision.
+- I decided to go with using a tally array. The reason for this was so that I could process through all the numbers before insertion happens. This would allow me to insert numbers in an order to only allow right children. This would make checking for children in the future and cut down on run time. Memory cost would be a bit higher due to saving the numbers in an extra array of a large size, however. Using a tally array also gave me the option to find all the numbers that were generated in an instant by outputting all indices that had a 1. 
+
+
+Q3. In an unlikely event of the need for rehashing such a Hash Table of BST’s, give your
+thoughts on this process in this specific scenario.
+-Perhaps create a new array that's double the size of the original then take all the nodes and replace them with the new array size as a key so they get replaced into new BSTs. That way bigger BSTs get broken apart and allows for less complexity. 
+
+
+Q4. How did you come up with the average size of the BST’s in the occupied cells of the Hash
+Table? Explain your strategy
+- In order to find the average size of the BST's, I already knew how many nodes were in there using the User Choice from the start of the program. From there, I just needed to create a new method that ran a for loop with a method in the Tree class that checked if the called BST has a null root. It would then return a bool value to the for loop and inside an if statement. From there, I would increase a count if the root was not null. That gave me a number of BSTs that was not empty and had at least 1 node of data. 

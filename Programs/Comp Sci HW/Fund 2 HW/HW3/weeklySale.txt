@@ -1,0 +1,6 @@
+Johnson		2	4	3	8	1
+Smith		1	5	8
+Kanes		3	1	2	7	5	3	1
+Jones		2	9	2	6	3
+Clarks		2	4	2	7	1
+

@@ -1,0 +1,8 @@
+Ava 8
+Sam 16
+Jack 23
+Ann 21 
+Bill 34 
+Sue 45 
+Frank 19 
+Lou 22

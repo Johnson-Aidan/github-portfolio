@@ -1,0 +1,12 @@
+Question 1- When you are done with this algorithm, what do you find in the first element of the Heap
+Array?
+   - You would find the root in the first element of the heap.
+
+Question 2- Discuss this mapping algorithm in terms of:
+1. Running time in Big O notation
+   - To start with, we would need to go through each bit of data. As we go through and properly storing it, it would cut down the amount of data that we need to look at by 1. This ultimately puts run time at 0(log N).
+2. Memory cost
+   - When it comes to the memory cost of a heap, it doesn't require an entirely separate array in order to create ordered heap. When insertion happens, it uses one extra variable for a node to be stored in and one variable for just tracking the current index. The memory cost is ultimately not high since it remains stored in the same heap array at the end of the process.
+
+Question 3 - Discuss the advantages and disadvantages of this algorithm. Be specific.
+   - One of the advantages of this program is that it has a pretty good Big O notation run time as well as memory use. It runs fast and doesn't need a copy array to transfer everything back and forth. The downside to heaps is that the trickle functions are the longest part of the program. If you were to cut the time to move nodes around, then the program would ultimately run faster in bigO notation. 

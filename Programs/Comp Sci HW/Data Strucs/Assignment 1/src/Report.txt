@@ -1,0 +1,27 @@
+Aidan Johnson 1890052
+
+"Describe your strategy in finding common elements across the two arrays.
+Mention the number of iterations along both arrays as a result of your strategy and any
+other "cost" that you believe your strategy may incur."
+- Finding the common elements was pretty simple and future proof as involving a separate array as a tally would allow
+me to mark how many of each number is used. If the tally array shows more than 1 in the index of the number, that tells
+me that there was a common element from the arrays. In finding the common elements, there would only be 2 iterations
+along the arrays in total, 1 each, as it's marking down everything in the array. The cost that would be of this is
+perhaps a bit of a hit to the compilation as it may need to run through the arrays multiple times to find the location
+of the common element and proceed to remove it and move all other elements one spot to the left. This would require a
+number of iterations equal to how many common elements there are for each array. It would be a bit of a cost and there
+may be better options out there for making the iterations smaller.
+
+"Does this requirement play an important role in your strategy in finding and
+ eliminating the common elements? Explain your answer."
+- Yes, it does as when making TheList array, it is required to be all in order as well. With the use of a tally array
+I am able to keep track of all the numbers at once and have them innately be in order if I was to have the indexes that
+are equal to 1 be added to TheList array. As for eliminating, it makes it quite easy as I can search through for only
+indexes that equal to 2. That gives me all the common elements.
+
+"Explain your steps in accomplishing this part. Don’t forget to discuss your view
+ of the cost of your strategy"
+- Merging the arrays into TheList is quite simple as all I needed to do was use the Tally array that was created to
+add each index that was equal to 1 to TheList. This required only 1 iteration through the arrays at the same time to add
+the different elements. With this strategy, I can't see how you may be able to reduce the cost much further. It's only 1
+iteration and will already be sorted automatically.
