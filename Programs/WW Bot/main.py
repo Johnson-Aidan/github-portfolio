@@ -109,4 +109,4 @@ async def on_error(event, *args):
             raise
 
 
-bot.run('NTA4ODA0NTU2MTg1MDEwMjE2.W9-TKw.5CN8TcR8n-PXzT7C7tfGNlu0-Ag')
+bot.run('MyDiscordBot')
